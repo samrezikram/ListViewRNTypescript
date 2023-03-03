@@ -2,8 +2,14 @@
  * @format
  */
 
-import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
+import { AppRegistry } from 'react-native';
 
-AppRegistry.registerComponent(appName, () => App);
+import { React, createElement } from "react";
+import { name as appName } from './app.json';
+import "./src/AppContainer";
+
+import "./src/AppContainer";
+import App from "./src/App";
+
+AppRegistry.registerComponent(appName,() => App);
+console.log('begister')
